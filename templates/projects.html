@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}Projects | Portfolio{% endblock %}
+{% block content %}
+<!-- Panel (Banner) -->
+<section class="panel banner right">
+    <div class="content color0 span-3-75">
+        <h1 class="major">My Projects</h1>
+        <p>Here are some of the projects I have worked on. Feel free to explore them!</p>
+        <ul class="actions">
+            <li><a href="#projects" class="button primary color1 circle icon solid fa-angle-right">Explore</a></li>
+            <li>
+                <a href="{{ url_for('home') }}" class="button primary color1 circle">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered span-1-75" data-position="25% 25%">
+        <img src="{{ url_for('static', filename='assets/images/pic01.jpg') }}" alt="">
+    </div>
+</section>
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight medium right" id="projects">
+    <div class="content span-7">
+        <h2 class="major">Weather Application</h2>
+        <p>A real-time weather application built using the OpenWeather API. Users can check weather updates for any city.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Weather-Forecasting-System-Using-Public-API-2" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top left">
+        <img src="{{ url_for('static', filename='assets/images/pic02.jpg') }}" alt="">
+    </div>
+</section>
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight medium right">
+    <div class="content span-7">
+        <h2 class="major">Open Library</h2>
+        <p>A book search application that allows users to search books by title, author, or ISBN using the Open Library API.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/BOOK-NOTES-USING-OPEN-LIBRARY-API" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top left">
+        <img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="">
+    </div>
+</section>
+
+<!-- Panel -->
+<section class="panel color1">
+    <div class="intro joined">
+        <h2 class="major">Blog Platform</h2>
+        <p>A blog platform built with Flask, featuring user login, registration, and CRUD functionality for blog posts.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Blog-with-Users-2" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="inner">
+        <ul class="grid-icons three connected">
+            <li><span class="icon fa-gem"><span class="label">Flask</span></span></li>
+            <li><span class="icon solid fa-camera-retro"><span class="label">CRUD</span></span></li>
+            <li><span class="icon solid fa-cog"><span class="label">Authentication</span></span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Panel (Spotlight) -->
+<section class="panel spotlight large left">
+    <div class="content span-5">
+        <h2 class="major">Flight Deals Finder</h2>
+        <p>An application built using Python and the Amadeus API to find the best flight deals and notify users via email and SMS.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Flight-Deals-Finder-Project" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top right">
+        <img src="{{ url_for('static', filename='assets/images/pic01.jpg') }}" alt="">
+    </div>
+</section>
+
+<section class="panel spotlight large left">
+    <div class="content span-5">
+        <h2 class="major">Cafe Review Web App</h2>
+        <p>A web application using Flask that allows users to add, view, and delete cafes, storing data in a CSV file.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/Coffee-Wifi-Project" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top right">
+        <img src="{{ url_for('static', filename='assets/images/pic02.jpg') }}" alt="">
+    </div>
+</section>
+
+<section class="panel spotlight large left">
+    <div class="content span-5">
+        <h2 class="major">Capital Quiz</h2>
+        <p>A quiz application using Node.js, Express.js, and PostgreSQL to test users on country capitals. Maintained user scores and provided a dynamic quiz experience.</p>
+        <ul class="actions">
+            <li>
+                <a href="https://github.com/knull23/World-Capital-Quiz" class="button primary color1 circle">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="image filtered tinted" data-position="top right">
+        <img src="{{ url_for('static', filename='assets/images/pic03.jpg') }}" alt="">
+    </div>
+</section>
+{% endblock %}
+
