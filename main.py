@@ -3,10 +3,8 @@ import smtplib
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from the .env file
 load_dotenv()
 
-# Retrieve email and password from environment variables
 MY_EMAIL = os.getenv("MY_EMAIL")
 MY_PASSWORD = os.getenv("MY_PASSWORD")
 
@@ -27,7 +25,6 @@ def contact():
         email = request.form['email']
         message = request.form['message']
 
-        # Sending email using SMTP
         try:
             with smtplib.SMTP("smtp.gmail.com", 587) as connection:
                 connection.starttls()
@@ -56,4 +53,4 @@ def skills():
 if __name__ == '__main__':
     app.run(debug=True)
 
-# <li><a href="https://github.com/knull23"><span class="icon solid fa-github"><span class="label">GitHub</span></span></a></li>
+
